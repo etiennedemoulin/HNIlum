@@ -1,8 +1,8 @@
 {
 	"name" : "NHIlum",
 	"version" : 1,
-	"creationdate" : 3830579481,
-	"modificationdate" : 3830579515,
+	"creationdate" : 3830695577,
+	"modificationdate" : 3830695614,
 	"viewrect" : [ 25.0, 119.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -10,7 +10,7 @@
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
-			"_HN.maxpat" : 			{
+			"HNIlum.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
@@ -18,7 +18,7 @@
 
 		}
 ,
-		"code" : 		{
+		"other" : 		{
 
 		}
 

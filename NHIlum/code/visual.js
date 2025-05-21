@@ -1,4 +1,4 @@
-this.nodes;
+this.nodes = [];
 
 function msg_dictionary(data) {
 
@@ -24,7 +24,7 @@ function msg_dictionary(data) {
 function list() {
 	const a = arrayfromargs(messagename, arguments);
 
-	for (let i = 0; i < a.length; i++) {
+	for (let i = 0; i < this.nodes.length; i++) {
 		if (a[i] !== 0) {
 			outlet(0, 'active', i+1, 1);
 		} else {
