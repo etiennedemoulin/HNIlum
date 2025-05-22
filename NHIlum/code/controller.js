@@ -1,4 +1,4 @@
-this.nodes;
+this.nodes = [];
 this.mouse = new Array(2);
 
 outlets = 3
