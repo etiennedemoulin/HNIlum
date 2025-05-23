@@ -2,7 +2,7 @@
 	"name" : "NHIlum",
 	"version" : 1,
 	"creationdate" : 3830695577,
-	"modificationdate" : 3830695614,
+	"modificationdate" : 3830838422,
 	"viewrect" : [ 25.0, 119.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -18,7 +18,11 @@
 
 		}
 ,
-		"other" : 		{
+		"code" : 		{
+
+		}
+,
+		"externals" : 		{
 
 		}
 

@@ -4,22 +4,48 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 6,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 478.0, 100.0, 1000.0, 755.0 ],
+		"rect" : [ 470.0, 141.0, 1002.0, 405.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 28.0, 133.0, 70.0, 22.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "multislider",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 391.0, 91.0, 134.0, 87.0 ],
+					"setminmax" : [ 0.0, 1.0 ],
+					"setstyle" : 2
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 250.0, 133.0, 22.0, 22.0 ],
+					"patching_rect" : [ 282.0, 133.0, 22.0, 22.0 ],
 					"text" : "t 1"
 				}
 
@@ -31,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 277.0, 133.0, 32.0, 22.0 ],
+					"patching_rect" : [ 309.0, 133.0, 32.0, 22.0 ],
 					"text" : "t 0 0"
 				}
 
@@ -43,8 +69,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 250.0, 100.0, 53.0, 22.0 ],
-					"text" : "route #1"
+					"patching_rect" : [ 282.0, 100.0, 46.0, 22.0 ],
+					"text" : "route 1"
 				}
 
 			}
@@ -307,8 +333,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 110.0, 138.0, 40.0, 22.0 ],
-					"text" : "*~ 15."
+					"patching_rect" : [ 110.0, 138.0, 47.0, 22.0 ],
+					"text" : "*~ 200."
 				}
 
 			}
@@ -403,7 +429,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 110.0, 203.0, 39.0, 22.0 ],
+					"patching_rect" : [ 110.0, 212.0, 39.0, 22.0 ],
 					"text" : "atodb"
 				}
 
@@ -415,7 +441,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 110.0, 168.0, 81.0, 22.0 ],
+					"patching_rect" : [ 110.0, 180.0, 81.0, 22.0 ],
 					"text" : "snapshot~ 20"
 				}
 
@@ -618,6 +644,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-56", 0 ],
 					"source" : [ "obj-42", 0 ]
 				}
@@ -752,6 +785,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
+					"order" : 1,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
