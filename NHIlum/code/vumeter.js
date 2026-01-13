@@ -1,4 +1,4 @@
-const array1 = Array(40).fill(1).map((n, i) => n + i);
+const array1 = Array(39).fill(1).map((n, i) => n + i);
 const array2 = [];
 // outlets=2
 

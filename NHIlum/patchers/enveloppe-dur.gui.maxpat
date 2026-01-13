@@ -10,10 +10,28 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 588.0, 114.0, 206.0, 698.0 ],
+		"rect" : [ 588.0, 157.0, 308.0, 655.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 180.0, 357.0, 56.0, 22.0 ],
+					"restore" : 					{
+						"env-dur-atk" : [ 100.0 ],
+						"env-dur-release" : [ 200.0 ]
+					}
+,
+					"text" : "autopattr",
+					"varname" : "u407004616"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
@@ -132,7 +150,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 200 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox[2]",
+							"parameter_longname" : "live.numbox[3]",
 							"parameter_mmax" : 10000.0,
 							"parameter_modmode" : 3,
 							"parameter_shortname" : "live.numbox",
@@ -142,7 +160,7 @@
 
 					}
 ,
-					"varname" : "live.numbox[1]"
+					"varname" : "env-dur-release"
 				}
 
 			}
@@ -162,7 +180,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 100 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox[3]",
+							"parameter_longname" : "live.numbox[2]",
 							"parameter_mmax" : 10000.0,
 							"parameter_modmode" : 3,
 							"parameter_shortname" : "live.numbox",
@@ -172,7 +190,7 @@
 
 					}
 ,
-					"varname" : "live.numbox"
+					"varname" : "env-dur-atk"
 				}
 
 			}

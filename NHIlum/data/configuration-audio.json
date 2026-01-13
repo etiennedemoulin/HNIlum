@@ -1,0 +1,30 @@
+{
+	"pattrstorage" : 	{
+		"name" : "audio",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"input-attaque" : [ 0.0 ],
+					"input-env-dur" : [ 0.0 ],
+					"input-env-mou" : [ 0.0 ],
+					"input-pitch" : [ 2.0 ],
+					"enveloppe-mou.gui::live.dial" : [ 22.047244094488178 ],
+					"enveloppe-mou.gui::live.dial[1]" : [ 38.768251301565179 ],
+					"enveloppe-mou.gui::live.dial[2]" : [ 265.074187188275062 ],
+					"enveloppe-dur.gui::env-dur-atk" : [ 100.0 ],
+					"enveloppe-dur.gui::env-dur-release" : [ 200.0 ],
+					"pitch.gui::aucunes" : [ 57.000000000000021 ],
+					"pitch.gui::sens" : [ 80.0 ],
+					"pitch.gui::ttes" : [ 80.999999999999972 ],
+					"attaque.gui::density" : [ 24.0 ],
+					"attaque.gui::sensibility" : [ 100.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

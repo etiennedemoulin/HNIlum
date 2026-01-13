@@ -2,7 +2,7 @@ outlets = 3;
 
 let file = [];
 
-let temp = {config:[], params:{}};
+let temp = {config:[]};
 
 function bang() {
 	outlet_dictionary(0, temp);
@@ -14,11 +14,22 @@ function init(size) {
 	outlet(1, 'nodenumber', size);
 	outlet(2, 'numNodes', size);
 	file = new Array(size);
-	temp.config = new Array(size);
+	temp.config = new Array(size).fill({});
+
+	for (let i = 0; i < temp.config.length; i++) {
+		temp.config[i] = { 
+			x: 0.5,
+			y: 0.5, 
+			midiNote: 0 
+		}
+	}
 
 	for (let i = 36; i < 84; i++) {
 		outlet(2, "setkslider", i, 0);
 	}
+
+	outlet_dictionary(0, temp);
+	
 }
 
 function updateparams() {
@@ -73,15 +84,6 @@ function msg_dictionary(dict) {
 	for (let i = 36; i < 84; i++) {
 		const dmxChannel = file.findIndex(e => e.midiNote === i);
 		outlet(2, 'setkslider', i, dmxChannel + 1);
-	}
-
-	if (dict.params) {
-		const keys = Object.keys(dict.params);
-		for (let i = 0; i < keys.length; i++) {
-			const key = keys[i];
-			const value = dict.params[key];
-			outlet(2, 'setparams', key, value);
-		}
 	}
 
 }

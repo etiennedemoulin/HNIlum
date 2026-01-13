@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 8,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -44,18 +44,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 217.0, 18.0, 77.0, 22.0 ],
 					"text" : "r env-dur-atk"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.0, 172.0, 70.0, 22.0 ],
-					"text" : "loadmess 0"
 				}
 
 			}
@@ -474,8 +462,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 110.0, 168.0, 81.0, 22.0 ],
-					"text" : "snapshot~ 20"
+					"patching_rect" : [ 110.0, 168.0, 138.0, 22.0 ],
+					"text" : "snapshot~ 50 @active 0"
 				}
 
 			}
@@ -500,7 +488,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 145.0, 14.0, 30.0, 30.0 ]
 				}
 
@@ -684,13 +672,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-56", 0 ],
 					"source" : [ "obj-42", 0 ]
 				}
@@ -852,7 +833,8 @@
 				}
 
 			}
- ]
+ ],
+		"oscreceiveudpport" : 0
 	}
 
 }
